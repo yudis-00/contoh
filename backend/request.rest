@@ -1,0 +1,29 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjUsIm5hbWUiOiJ5dWRpcyIsImVtYWlsIjoieXVkaXNAZ21haWwuY29tIiwiaWF0IjoxNzM4MTQ1MzEyLCJleHAiOjE3MzgxNDUzMzJ9.gT8x4vUQGQdDn8Jr1jclGz-5_S7qKR2IyXW6YPlwj7I
+
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "yudis",
+    "email": "yudis@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "yudis@gmail.com",
+    "password": "123456"
+}
+
+### 
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
